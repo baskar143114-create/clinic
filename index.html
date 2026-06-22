@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthCare Clinic</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4faff;
+overflow-x:hidden;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#0077ff;
+}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#333;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0077ff,#00c6ff);
+color:white;
+flex-direction:column;
+}
+
+.hero h1{
+font-size:60px;
+animation:slideDown 1s ease;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+animation:fadeIn 2s ease;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 30px;
+background:white;
+color:#0077ff;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.4s;
+animation:bounce 2s infinite;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.services{
+padding:80px 10%;
+text-align:center;
+}
+
+.services h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:300px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.5s;
+animation:fadeUp 1s ease;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0077ff;
+}
+
+.doctors{
+padding:80px 10%;
+background:#eef7ff;
+text-align:center;
+}
+
+.doctor-box{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.doctor{
+background:white;
+padding:20px;
+border-radius:20px;
+width:250px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.doctor:hover{
+transform:scale(1.05);
+}
+
+footer{
+background:#0077ff;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@keyframes slideDown{
+from{
+opacity:0;
+transform:translateY(-100px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(80px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes bounce{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:40px;
+}
+
+.cards,
+.doctor-box{
+flex-direction:column;
+align-items:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🏥 HealthCare</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Doctors</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome To HealthCare Clinic</h1>
+<p>Your Health Is Our First Priority</p>
+<a href="#" class="btn">Book Appointment</a>
+</section>
+
+<section class="services">
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>General Checkup</h3>
+<p>Complete health checkup with expert doctors.</p>
+</div>
+
+<div class="card">
+<h3>Dental Care</h3>
+<p>Advanced dental treatment and consultation.</p>
+</div>
+
+<div class="card">
+<h3>Emergency Care</h3>
+<p>24/7 emergency medical support available.</p>
+</div>
+
+</div>
+</section>
+
+<section class="doctors">
+<h2>Our Doctors</h2>
+
+<div class="doctor-box">
+
+<div class="doctor">
+<h3>Dr. Kumar</h3>
+<p>Cardiologist</p>
+</div>
+
+<div class="doctor">
+<h3>Dr. Priya</h3>
+<p>Dentist</p>
+</div>
+
+<div class="doctor">
+<h3>Dr. Arun</h3>
+<p>Neurologist</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 HealthCare Clinic. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
